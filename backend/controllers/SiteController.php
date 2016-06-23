@@ -28,7 +28,7 @@ class SiteController extends Controller
                     [
                         'actions' => ['logout', 'index'],
                         'allow' => true,
-                        'roles' => ['@'],
+                        'roles' => ['admin'],
                     ],
                 ],
             ],
@@ -55,6 +55,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+   
         return $this->render('index');
     }
 
